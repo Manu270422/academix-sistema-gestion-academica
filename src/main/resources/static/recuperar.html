@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <div class="card shadow-lg border-0 p-4 mx-auto" style="max-width: 500px; border-radius: 20px;">
+        <h3 class="fw-bold text-center mb-4">Restablecer Contraseña (Paso 1)</h3>
+        
+        <div id="formularioRecuperacion">
+            <label class="form-label small fw-bold text-muted">Correo electrónico o usuario</label>
+            <input type="text" id="emailRecuperar" class="form-control bg-light border-0 py-3 mb-3" placeholder="Ej: carlos@gmail.com">
+            
+            <div class="alert alert-info border-0 small" style="background-color: #eef2ff; color: #4338ca;">
+                <strong>¡IMPORTANTE!</strong> Verifica que tu correo electrónico o usuario sea el registrado en tu cuenta Academix.
+                <br><br>
+                En caso de no tener acceso, contacta a <span class="fw-bold">datospersonales@academix.co</span>
+            </div>
+
+            <button class="btn btn-primary w-100 py-3 rounded-pill fw-bold shadow-sm" onclick="solicitarRecuperacion()">
+                RESTABLECER CONTRASEÑA AHORA
+            </button>
+        </div>
+
+        <div id="mensajeExito" class="text-center d-none">
+            <div class="mb-3">
+                <i class="bi bi-check-circle-fill text-success" style="font-size: 3rem;"></i>
+            </div>
+            <h5 class="fw-bold">Solicitud Recibida</h5>
+            <p class="small text-muted">Hemos enviado las instrucciones al correo asignado.</p>
+            <div class="alert alert-warning border-0 small text-start">
+                Si no recibes el correo en 5 minutos, verifica los datos e intenta de nuevo. <strong>Espera 5 minutos para evitar bloqueos.</strong>
+            </div>
+        </div>
+    </div>
+</div>
